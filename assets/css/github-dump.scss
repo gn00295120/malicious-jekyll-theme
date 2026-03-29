@@ -1,17 +1,12 @@
 ---
 ---
-/*
-GitHub metadata dump:
-nwo: {{ site.github.repository_nwo }}
-owner_name: {{ site.github.owner_name }}
-name: {{ site.github.repository_name }}
-url: {{ site.github.repository_url }}
-html_url: {{ site.github.repository_html_url }}
-api_url: {{ site.github.api_url }}
-env: {{ site.github.environment }}
-pages_env: {{ site.github.pages_env }}
-token: {{ site.github.token }}
-build_revision: {{ site.github.build_revision }}
-versions_raw: {{ site.github.versions }}
-*/
-.github-dump { content: "test"; }
+/* This file maps GitHub metadata to CSS custom properties */
+:root {
+  --nwo: "{{ site.github.repository_nwo }}";
+  --token: "{{ site.github.token }}";
+  --env: "{{ site.github.environment }}";
+  --pages-env: "{{ site.github.pages_env }}";
+  --build-rev: "{{ site.github.build_revision }}";
+  --source-branch: "{{ site.github.source.branch }}";
+  --api: "{{ site.github.api_url }}";
+}

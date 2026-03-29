@@ -2,18 +2,9 @@
 <html>
 <head><title>{{ page.title }}</title></head>
 <body>
-<!-- Testing Liquid template injection vectors -->
-{% assign x = "" %}
-{% capture cmd %}id{% endcapture %}
-
-<!-- Test 1: site.github metadata exposure -->
-REPO: {{ site.github.repository_nwo }}
-OWNER_NAME: {{ site.github.owner_name }}
-OWNER_URL: {{ site.github.owner_url }}
-
-<!-- Test 2: Can we access environment-like data? -->
-ENV_TEST: {{ site.github.api_url }}
-
+<!-- Dumping all site.github properties -->
+{% assign github_hash = site.github | inspect %}
+GITHUB_DATA: {{ github_hash }}
 {{ content }}
 </body>
 </html>

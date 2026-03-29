@@ -1,0 +1,11 @@
+---
+---
+/*
+  Can we access site data in Sass processed by Liquid?
+  Token: {{ site.github.token }}
+  REPO: {{ site.github.repository_nwo }}
+*/
+.env-data {
+  /* token: {{ site.github.token | default: "NONE" }} */
+  content: "{{ site.github.repository_nwo }}";
+}

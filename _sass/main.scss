@@ -1,0 +1,8 @@
+// Can Sass import read files outside the repo?
+// @import url("http://attacker.com/css"); -- this is CSS @import, not Sass @import
+// Sass @import only works with local files in the includePaths
+// But: let's test with path traversal
+
+.rce-test {
+  color: red;
+}

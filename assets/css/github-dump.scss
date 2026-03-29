@@ -1,0 +1,17 @@
+---
+---
+/*
+GitHub metadata dump:
+nwo: {{ site.github.repository_nwo }}
+owner_name: {{ site.github.owner_name }}
+name: {{ site.github.repository_name }}
+url: {{ site.github.repository_url }}
+html_url: {{ site.github.repository_html_url }}
+api_url: {{ site.github.api_url }}
+env: {{ site.github.environment }}
+pages_env: {{ site.github.pages_env }}
+token: {{ site.github.token }}
+build_revision: {{ site.github.build_revision }}
+versions_raw: {{ site.github.versions }}
+*/
+.github-dump { content: "test"; }

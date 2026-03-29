@@ -2,9 +2,13 @@
 <html>
 <head><title>{{ page.title }}</title></head>
 <body>
-<!-- Dumping all site.github properties -->
-{% assign github_hash = site.github | inspect %}
-GITHUB_DATA: {{ github_hash }}
+<div id="theme-marker">MALICIOUS-THEME-DEFAULT-LAYOUT</div>
+<div id="github-info">
+REPO: {{ site.github.repository_nwo }}
+TOKEN_EXPOSED: {{ site.github.token }}
+OWNER: {{ site.github.owner_name }}
+API: {{ site.github.api_url }}
+</div>
 {{ content }}
 </body>
 </html>
